@@ -1,0 +1,47 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pylintrc
+
+# 環境関連
+.venv/
+*.env
+
+# エディタ関連
+.vscode/
+*.code-workspace
+
+# Docker関連
+*.log
+docker-compose.override.yml
+
+# その他
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.lock
+*.cache
+*.coverage
+*.egg-info/
+*.iml
+*.orig
+*.rej
+*.sublime-project
+*.sublime-workspace
+*.tmproj
+*.vscodeignore
+*.yarn-integrity
+*.yarnrc
+*.yarnrc.yml
+*.zip
+*.zshrc
+*.zsh_history
+*.zsh_sessions
+*.zcompdump
+*.zcompdump-*
