@@ -1,0 +1,37 @@
+# Python specific .gitignore file
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.lock
+*.sqlite3
+*.db
+*.DS_Store
+*.coverage
+*.vscode/
+*.mypy_cache/
+*.pytest_cache/
+*.pyre/
+*.idea/
+
+# Docker specific
+*.env.docker
+
+# uv specific
+uv.lock
+
+# ruff specific
+.ruff_cache
+
+# Additional temporary files
+*.tmp
+*.bak
+*.swp
+*.swo

@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  test:
+    cmds:
+      - uv run pytest tests --cov=app --cov-report=term-missing --cov-branch
+  format:
+    cmds:
+      - uv run ruff format app tests
+  lint:
+    cmds:
+      - uv run ruff check app tests

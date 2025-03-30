@@ -1,0 +1,12 @@
+version: '3'
+
+includes:
+  api:
+    taskfile: 'api/Taskfile.api.yml'
+    dir: './api'
+
+tasks:
+  hello:
+    desc: Hello World
+    cmds:
+      - echo "Hello, World!"
