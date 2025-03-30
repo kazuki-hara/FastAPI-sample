@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  task-hello:
+  setup-task:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,4 +19,21 @@ jobs:
         uses: arduino/setup-task@v2
       - name: Run Task
         run: task hello
-    
+  
+  python-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: atral-sh/setup-uv@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version-file: "api/pyproject.toml"
+      
+      - name: Install the projects
+        run: uv sync --all-extras --dev
