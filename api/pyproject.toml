@@ -18,3 +18,10 @@ dev = [
     "pytest-mock>=3.14.0",
     "ruff>=0.11.2",
 ]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.per-file-ignores]
+# Ignore F401 (unused imports) for tests/test_main.py
+tests/*py = ["F401"]
