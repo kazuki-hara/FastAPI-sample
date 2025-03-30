@@ -9,17 +9,6 @@ on:
       - main
 
 jobs:
-  setup-task:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Install Task
-        uses: arduino/setup-task@v2
-      - name: Run Task
-        run: task hello
-  
   python-test:
     runs-on: ubuntu-latest
     defaults:
@@ -28,6 +17,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Install Task
+        uses: arduino/setup-task@v2
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4
