@@ -2,7 +2,7 @@ version: '3'
 
 includes:
   api:
-    taskfile: 'api/Taskfile.api.yml'
+    taskfile: 'api/Taskfile.yml'
     dir: './api'
 
 tasks:
